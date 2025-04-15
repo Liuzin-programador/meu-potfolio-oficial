@@ -578,45 +578,4 @@ textarea{
   .home__img {
     width: 450px;
   }
-  /* Estilo padrão (mobile first) */
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.home__top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.home__social {
-    margin-bottom: 1rem;
-}
-
-.home__social-icon {
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-}
-
-/* Em telas maiores, reorganiza */
-@media screen and (min-width: 768px) {
-    .home {
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: left;
-    }
-
-    .home__top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .home__data {
-        flex: 1;
-        padding-left: 2rem;
-    }
-}
 }
