@@ -534,4 +534,105 @@ img {
   .home__img {
     width: 450px;
   }
+
+
+
+  Obrigado! Agora, para ajustar o layout e tornar os ícones e a foto posicionados acima dos textos e botão em telas de celular, vamos modificar o CSS com media queries. Vou criar uma regra para telas pequenas, como as de celular, onde a foto e os ícones ficam acima dos textos e do botão, e em telas maiores o layout permanece como está.
+
+Aqui está a modificação que você pode adicionar ao seu arquivo CSS:
+
+/* CSS para responsividade em telas pequenas */
+@media (max-width: 768px) {
+    .home__data {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home__social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home__social-icon {
+        font-size: 30px;
+    }
+
+    .home__img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .home__blob {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Colocar ícones e foto acima do texto */
+    .home__data, .home__social, .home__img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+O que foi alterado:
+
+1. Mudança na home__data: Os elementos de texto (como o título) agora estarão centralizados com text-align: center.
+
+
+2. Ícones e botões: Eles são dispostos em linha em telas grandes, mas para telas menores, os ícones (home__social) ficam centralizados, abaixo da foto.
+
+
+3. Imagem (foto de perfil): A imagem será centralizada abaixo dos textos e ícones.
+
+
+4. Ajustes de tamanho e margens: Eu reduzi o tamanho da imagem para um valor mais adequado em telas pequenas e ajustei o espaçamento para garantir que o layout fique bonito e organizado.
+
+/* CSS para responsividade em telas pequenas */
+@media (max-width: 768px) {
+    .home__data {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home__social {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home__social-icon {
+        font-size: 30px;
+    }
+
+    .home__img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .home__blob {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Colocar ícones e foto acima do texto */
+    .home__data, .home__social, .home__img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+}
+
+
 }
