@@ -13,7 +13,8 @@
 
 <!-- Autor -->
 <meta name="author" content="Eliezer Rodrigues Souza" />
-        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">  <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" type="image/jpeg" href="icone (1).jpg">
+        <link rel="stylesheet" href="assets/css/styles.css">
            <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         
@@ -25,7 +26,7 @@
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <img src="iconelogo.png" alt="" class="nav__logo">
+                    <img src="imag.png" alt="" class="nav__logo">
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -186,36 +187,55 @@ Estou sempre em busca de novos aprendizados e oportunidades que me permitam evol
                 </div>
                     
                     <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                        <img src="todos.png" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projetos programação web</h2>
+     
+<!--===== WORK =====-->
+<section class="work section" id="work">  
+  <h2 class="section-title text-center mb-4">Projetos</h2>
+<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Botões de filtro centralizados -->
+  <div class="flex justify-center flex-nowrap gap-4 mb-6 overflow-x-auto px-4">
+  <button class="filter-btn active max-w-[10rem] truncate px-4 py-2" data-filter="all">Todos</button>  
+  <button class="filter-btn max-w-[10rem] truncate px-4 py-2" data-filter="web">Sites</button>  
+  <button class="filter-btn max-w-[10rem] truncate px-4 py-2" data-filter="design">Artes Visuais</button>  
+</div>
 
-                <div class="work__container bd-grid">
-                    <a href="https://slide-psi-one.vercel.app/" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="https://pokedex-entretenimento.vercel.app/" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="https://jogo-numero-secreto-minha-versao.vercel.app/" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="https://atualizacao-jogo-da-memoria.vercel.app/" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="https://cardapio-25.vercel.app/" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="https://projeto-restaurante-e-fast-food.vercel.app/" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
+  <!-- Galeria de projetos -->
+  
+
+
+    <div class="work__container bd-grid ">
+        <a href="https://slide-psi-one.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work1.jpg" alt="">
+        </a>
+        <a href="https://pokedex-entretenimento.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work2.jpg" alt="">
+        </a>
+        <a href="https://jogo-numero-secreto-minha-versao.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work3.jpg" alt="">
+        </a>
+        <a href="https://atualizacao-jogo-da-memoria.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work4.jpg" alt="">
+        </a>
+        <a href="https://cardapio-25.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work5.jpg" alt="">
+        </a>
+        <a href="https://projeto-restaurante-e-fast-food.vercel.app/" class="work__img" data-category="web">
+            <img src="assets/img/work6.jpg" alt="">
+        </a>
+        <!-- Exemplo de arte visual -->
+        <a href="#" class="work__img" data-category="design">
+            <img src="assets/img/art1.jpg" alt="">
+        </a>
+        <a href="https://www.behance.net/eliezerrodrigu12" class="work__img" data-category="design">
+            <img src="todos.png" alt="">
+        </a>
+    </div>
+</section>
 
             <!-- -------------- CONTACT BOX ---------------- -->
 
@@ -325,4 +345,4 @@ Estou sempre em busca de novos aprendizados e oportunidades que me permitam evol
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
-    </html>
+      </html>
