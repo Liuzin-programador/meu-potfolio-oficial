@@ -355,73 +355,7 @@ img {
   transform: scale(1.1);
 }
 
-/* ----- CONTACT BOX ----- */
-.contact-info{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 30px;
-  width: 100%;
-  height: 315px;
-  background: #000000;
-  border-radius: 10px;
-  box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-  overflow: hidden;
-}
-.contact-info>h2{
-  color: #FFFFFF;
-  margin-bottom: 20px;
-}
-.contact-info>p{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fffafa;
-  margin-block: 5px;
-}
-.contact-info p>i{
-  font-size: 18px;
-}
-.contact-info::after{
-  background: var(--color-white);
-}
-.contact-info:hover.contact-info h2,
-.contact-info:hover.contact-info p,
-.contact-info:hover.contact-info i{
-  color: rgb(228, 228, 228);
-  z-index: 2;
-}
-.section{
-  padding-block: 5em;
-}
-.row{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 50px;
-}
-.col{
-  display: flex;
-  width: 50%;
-}
 
-.top-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.top-header h1 {
-  font-size: 2.5rem;
-  color: var(--main-color); /* ou qualquer cor que preferir */
-  margin-bottom: 10px;
-}
-
-.top-header span {
-  font-size: 1rem;
-  color: var(--text-color); /* cor mais suave para subtítulo */
-}
 
 
 /* ===== FOOTER =====*/
