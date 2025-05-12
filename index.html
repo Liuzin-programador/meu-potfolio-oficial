@@ -46,9 +46,24 @@
     </head>
 
     <body>
-<div id="loader" class="fixed inset-0 bg-black flex items-center justify-center z-50">
-  <div class="w-20 h-20 border-8 border-gray-800 border-t-blue-500 rounded-full animate-spin"></div>
+<div id="loader" class="fixed inset-0 bg-black flex items-center justify-center z-50 flex-col text-center">
+  <div class="w-20 h-20 border-8 border-gray-800 border-t-blue-500 rounded-full animate-spin mb-6"></div>
+  <p id="loader-message" class="text-white text-lg hidden"></p>
 </div>
+
+<script>
+  // Função pra esconder loader quando tudo carregar
+  window.onload = function () {
+    document.getElementById('loader').style.display = 'none';
+  };
+
+  // Função pra exibir mensagem se demorar mais de 10 segundos
+  setTimeout(function () {
+    const loaderMessage = document.getElementById('loader-message');
+    loaderMessage.innerHTML = "Para melhor desempenho, recomendamos utilizar o navegador Google Chrome.";
+    loaderMessage.classList.remove('hidden');
+  }, 10000);
+</script>
         <!--===== HEADER =====-->
 
         <header class="l-header">
