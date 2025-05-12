@@ -877,8 +877,8 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
     }
   </style>
       
-<!-- Banner de aviso (escondido por padrão) -->
-<div id="aviso-navegador" class="hidden fixed top-0 left-0 w-full bg-yellow-400 text-gray-900 p-4 flex items-center justify-between shadow-lg z-50">
+<!-- Banner de aviso (sempre visível para teste) -->
+<div id="aviso-navegador" class="fixed top-0 left-0 w-full bg-yellow-400 text-gray-900 p-4 flex items-center justify-between shadow-lg z-50">
   <div class="flex items-center space-x-3">
     <svg class="w-6 h-6 text-yellow-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"/>
@@ -888,22 +888,11 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
   <button onclick="fecharAviso()" class="text-yellow-900 hover:text-yellow-700 text-xl font-bold">&times;</button>
 </div>
 
-<!-- Script de detecção -->
+<!-- Script para fechar o aviso -->
 <script>
-  function detectarNavegador() {
-    var userAgent = navigator.userAgent;
-    var isChrome = /Chrome/.test(userAgent) && !/Edg/.test(userAgent) && !/OPR/.test(userAgent);
-
-    if (!isChrome) {
-      document.getElementById("aviso-navegador").classList.remove("hidden");
-    }
-  }
-
   function fecharAviso() {
     document.getElementById("aviso-navegador").classList.add("hidden");
   }
-
-  window.onload = detectarNavegador;
 </script>
 </body>
 
