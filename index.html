@@ -931,11 +931,18 @@ modal.addEventListener("click", () => {
       // Esconde a imagem até carregar
       img.classList.add("invisible");
 
-      // Quando carregar, remove o loader e revela a imagem
-      img.onload = () => {
+      const removeLoader = () => {
         loader.remove();
         img.classList.remove("invisible");
       };
+
+      // Se a imagem já estiver carregada no cache
+      if (img.complete) {
+        removeLoader();
+      } else {
+        img.onload = removeLoader;
+        img.onerror = removeLoader; // Remove também se der erro de carregamento
+      }
     });
   });
 </script>
