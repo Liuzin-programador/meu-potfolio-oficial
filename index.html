@@ -418,9 +418,7 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
 
 
 <div class="columns-4 gap-2 px-2">
-  <div class="relative overflow-hidden">
-    <div class="skeleton animate-pulse bg-gray-700 w-full h-40">
- <a href="https://slide-psi-one.vercel.app/" class="work__img" data-category="web">
+   <a href="https://slide-psi-one.vercel.app/" class="work__img" data-category="web">
     <img src="assets/img/work1.jpg" alt="" class="w-full h-auto rounded mb-2">
   </a>
 
@@ -735,8 +733,6 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
 <a class="mb-2 block work__img" data-category="design">
   <img src="assets/img/arte95.jpg" alt="">
 </a>
-</div>
-</div>
    </div> 
 </section>
 
@@ -882,6 +878,40 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
 
 
         <!--===== MAIN JS =====-->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".columns-4.gap-2.px-2");
+    const images = container.querySelectorAll("img");
+
+    images.forEach(img => {
+      // Cria o loader com Tailwind
+      const loader = document.createElement("div");
+      loader.className = "absolute inset-0 flex items-center justify-center bg-gray-800 z-10";
+
+      const spinner = document.createElement("div");
+      spinner.className = "animate-spin rounded-full h-12 w-12 border-t-4 border-green-500";
+      loader.appendChild(spinner);
+
+      // Adiciona position relative no parent se não tiver
+      const parent = img.parentElement;
+      if (!parent.classList.contains("relative")) {
+        parent.classList.add("relative", "overflow-hidden");
+      }
+
+      // Coloca o loader no container da imagem
+      parent.appendChild(loader);
+
+      // Esconde a imagem até carregar
+      img.classList.add("invisible");
+
+      // Quando carregar, remove o loader e revela a imagem
+      img.onload = () => {
+        loader.remove();
+        img.classList.remove("invisible");
+      };
+    });
+  });
+</script>
 
         <script src="assets/js/main.js"></script>
 <script>
