@@ -911,7 +911,12 @@ modal.addEventListener("click", () => {
     const images = container.querySelectorAll("img");
 
     images.forEach(img => {
-      // Cria o loader com Tailwind
+      const parent = img.parentElement;
+
+      // Adiciona position relative no parent
+      parent.classList.add("relative", "overflow-hidden");
+
+      // Cria o loader
       const loader = document.createElement("div");
       loader.className = "absolute inset-0 flex items-center justify-center bg-gray-800 z-10";
 
@@ -919,16 +924,9 @@ modal.addEventListener("click", () => {
       spinner.className = "animate-spin rounded-full h-12 w-12 border-t-4 border-green-500";
       loader.appendChild(spinner);
 
-      // Adiciona position relative no parent se não tiver
-      const parent = img.parentElement;
-      if (!parent.classList.contains("relative")) {
-        parent.classList.add("relative", "overflow-hidden");
-      }
-
-      // Coloca o loader no container da imagem
       parent.appendChild(loader);
 
-      // Esconde a imagem até carregar
+      // Esconde a imagem
       img.classList.add("invisible");
 
       const removeLoader = () => {
@@ -936,12 +934,13 @@ modal.addEventListener("click", () => {
         img.classList.remove("invisible");
       };
 
-      // Se a imagem já estiver carregada no cache
+      // Só remove o loader depois
       if (img.complete) {
-        removeLoader();
+        // Adiciona um delay pequeno para garantir visualização do loader
+        setTimeout(removeLoader, 100); 
       } else {
         img.onload = removeLoader;
-        img.onerror = removeLoader; // Remove também se der erro de carregamento
+        img.onerror = removeLoader;
       }
     });
   });
