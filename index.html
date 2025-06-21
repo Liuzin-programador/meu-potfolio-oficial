@@ -1,669 +1,191 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
-    <head>
-
-        <meta charset="UTF-8">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-        
-
-  <!-- Palavras-chave -->
-
-<meta name="keywords" content="Eliezer Rodrigues Souza, designer gráfico, programador web, design gráfico, desenvolvimento web, portfólio, identidade visual, sites modernos" />
-
-
-
-<!-- Descrição -->
-
-<meta name="description" content="Portfólio de Eliezer Rodrigues Souza - Designer Gráfico e Programador Web. Criação de sites modernos, identidades visuais e soluções criativas." />
-
-
-
-<!-- Autor -->
-
-<meta name="author" content="Eliezer Rodrigues Souza" />
-
-        <link rel="icon" type="image/jpeg" href="icone (1).jpg">
-
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-           <!-- =====BOX ICONS===== -->
-
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        
-<link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
-  
-
-
-        <title>Meu Portfolio</title>
-
-    </head>
-
-    <body>
-<div id="loader" class="fixed inset-0 bg-black flex items-center justify-center z-50 flex-col text-center">
-  <div class="w-20 h-20 border-8 border-gray-800 border-t-blue-500 rounded-full animate-spin mb-6"></div>
-  <p id="loader-message" class="text-white text-lg hidden"></p>
-</div>
-
-<script>
-  // Função pra esconder loader quando tudo carregar
-  window.onload = function () {
-    document.getElementById('loader').style.display = 'none';
-  };
-
-  // Função pra exibir mensagem se demorar mais de 10 segundos
-  setTimeout(function () {
-    const loaderMessage = document.getElementById('loader-message');
-    loaderMessage.innerHTML = "Sua internet parece estar instável,aguarde um momento, ou ultilize outra internet.";
-    loaderMessage.classList.remove('hidden');
-  }, 10000);
-</script>
-        <!--===== HEADER =====-->
-
-        <header class="l-header">
-
-            <nav class="nav bd-grid">
-<div>
-
-                    <img src="iconelogo.png" alt="" class="nav__logo">
-
-                </div>
-
-
-
-                <div class="nav__menu" id="nav-menu">
-
-                    <ul class="nav__list">
-
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">INICIO</a></li>
-
-                        <li class="nav__item"><a href="#about" class="nav__link">SOBRE MIM</a></li>
-
-                        <li class="nav__item"><a href="#skills" class="nav__link">ESPECIALIDADES</a></li>
-
-                        <li class="nav__item"><a href="#work" class="nav__link">ALGUNS PROJETOS</a></li>
-
-                        <li class="nav__item"><a href="#contact" class="nav__link">CONTATO</a></li>
-
-                    </ul>
-
-                </div>
-
-
-
-                <div class="nav__toggle" id="nav-toggle">
-
-                    <i class='bx bx-menu'></i>
-
-                </div>
-
-            </nav>
-
-        </header>
-
-
-
-        <main class="l-main">
-
-            <!--===== HOME =====-->
-
-            <section class="home bd-grid" id="home">
-
-                <div class="home__data">
-
-                    <h1 class="home__title">Olá, <span class="home__title-color">   Eu sou</span><br><span class="typedText"></span></h1>
-
-
-
-                    <a href="https://wa.me/5538999929109?text=Ola%20Eliezer%20vim%20atrav%C3%A9s%20do%20seu%20site%20profissional%20quero%20oferecer%20uma%20proposta%20de%20emprego" class="button">Contratar</a>
-
-                </div>
-
-
-
-                <div class="home__social">
-
-                    <a href="https://www.linkedin.com/in/eliezer-rodrigues-5b0812346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-
-                    <a href="https://www.instagram.com/eliezer_creator?igsh=MWNzNTczZTFxNG12bQ==" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-
-                    <a href="https://wa.link/joxkvn " class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-
-                </div>
-
-
-
-                <div class="home__img">
-
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                        <mask id="mask0" mask-type="alpha">
-
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-
-                        </mask>
-
-                        <g mask="url(#mask0)">
-
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/home.png"/>
-
-                        </g>
-
-                    </svg>
-
-                </div>
-
-            </section>
-
-
-
-            <!--===== ABOUT =====-->
-
-            <section class="about section " id="about">
-
-                <h2 class="section-title">Sobre</h2>
-
-
-
-                <div class="about__container bd-grid">
-
-                    <div class="about__img">
-
-                        <img src="assets/img/about.jpg" alt="">
-
-                    </div>
-
-                    
-
-                    <div>
-
-                        <h2 class="about__subtitle">Me chamo Eliezer</h2>
-
-                        <p class="about__text"> tenho 18 anos e sou apaixonado por tecnologia e design. Concluí o Ensino Médio em 2024 e atualmente estou cursando o 3º módulo do curso técnico em Informática. Paralelamente, venho me dedicando aos estudos em design gráfico, programação web e web design, unindo criatividade e lógica para desenvolver soluções digitais modernas, funcionais e visualmente atrativas.
-
-
-
-Estou sempre em busca de novos aprendizados e oportunidades que me permitam evoluir profissionalmente e aplicar meus conhecimentos em projetos reais. Meu objetivo é atuar na área de tecnologia, contribuindo com minhas habilidades e crescendo junto com os desafios. </p>        
-Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e JavaScript, além de experiência com frameworks como Tailwind CSS e Bootstrap. Tenho familiaridade com ferramentas de design como PicsArt e Canvas, e venho explorando o uso de Inteligência Artificial em projetos criativos e funcionais. Estou sempre em busca de aprimorar minhas habilidades e acompanhar as inovações da tecnologia.
-                    </div>                                   
-
-                </div>
-
-            </section>
-
-
-
-            <!--===== SKILLS =====-->
-
-            <section class="skills section" id="skills">
-
-                <h2 class="section-title">Especialidades</h2>
-
-
-
-                <div class="skills__container bd-grid">          
-
-                    <div>
-
-                        
-                        
-                        <div class="skills__data">
-
-                            <div class="skills__names">
-
-                                <i class='bx bxl-html5 skills__icon'></i>
-
-                                <span class="skills__name">HTML5</span>
-
-                            </div>
-
-                            <div class="skills__bar skills__html">
-
-
-
-                            </div>
-
-                            <div>
-
-                                <span class="skills__percentage">95%</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-
-                            <div class="skills__names">
-
-                                <i class='bx bxl-css3 skills__icon'></i>
-
-                                <span class="skills__name">CSS3</span>
-
-                            </div>
-
-                            <div class="skills__bar skills__css">
-
-                                
-
-                            </div>
-
-                            <div>
-
-                                <span class="skills__percentage">85%</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-
-                            <div class="skills__names">
-
-                                <i class='bx bxl-javascript skills__icon' ></i>
-
-                                <span class="skills__name">JAVASCRIPT</span>
-
-                            </div>
-
-                            <div class="skills__bar skills__js">
-
-                                
-
-                            </div>
-
-                            <div>
-
-                                <span class="skills__percentage">75%</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-
-                            <div class="skills__names">
-
-                                <i class='bx bx-code-block skills__icon'></i>
-
-                                <span class="skills__name">Framework Bootstrap</span>
-
-                            </div>
-<div class="skills__bar skills__js">
-
-                                
-
-                            </div>
-
-                            <div>
-
-                                <span class="skills__percentage">75%</span>
-
-                            </div>
-
-                        </div>
-                            
-                        <div class="skills__data">
-
-                            <div class="skills__names">
-
-                                <i class='bx bx-code-block skills__icon'></i>
-
-                                <span class="skills__name">Framework Tailwind</span>
-
-                            </div>
-
-                            <div class="skills__bar skills__ux">
-
-                                
-
-                            </div>
-
-                            <div>
-
-                                <span class="skills__percentage">85%</span>
-
-                            </div>
-
-                        </div>
-
-                    
-
-                    <div class="skills__data">
-
-                        <div class="skills__names">
-
-                            <i class='bx bxs-paint skills__icon'></i>
-
-                            <span class="skills__name">PicsArt</span>
-
-                        </div>
-
-                        <div class="skills__bar skills__html">
-
-                            
-
-                        </div>
-
-                        <div>
-
-                            <span class="skills__percentage">95%</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="skills__data">
-
-                        <div class="skills__names">
-
-                            <i class='bx bxs-brush skills__icon'></i>
-
-                            <span class="skills__name">Canvas</span>
-
-                        </div>
-
-                        <div class="skills__bar skills__html">
-
-                            
-
-                        </div>
-
-                        <div>
-
-                            <span class="skills__percentage">95%</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="skills__data">
-
-                        <div class="skills__names">
-
-                            <i class='bx bxs-brain skills__icon'></i>
-
-                            <span class="skills__name">IA</span>
-
-                        </div>
-
-                        <div class="skills__bar skills__html">
-
-                            
-
-                        </div>
-
-                        <div>
-
-                            <span class="skills__percentage">95%</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                    
-
-                    <div>              
-
-                        <img src="20250505_105455_0000.png" alt="" class="skills__img">
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-
-     
-
-<!--===== projetos =====-->
-<section class="work section" id="work">
-  <h2 class="section-title text-center mb-8">Meus Trabalhos</h2>
-
-  <div class="flex flex-col md:flex-row justify-center items-center gap-8 px-4">
-
-    <!-- Projetos de Desenvolvimento -->
-    <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center hover:scale-105 transition">
-      <i class='bx bx-code-alt text-5xl text-blue-600 mb-4'></i>
-      <h3 class="text-xl font-semibold mb-2">Projetos Web</h3>
-      <p class="text-gray-600 mb-4">VEJA MEUS PROJETOS DEV.</p>
-      <a href="https://projetos-front-end-nu.vercel.app/" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver Projetos</a>
-    </div>
-
-    <!-- Galeria de Artes -->
-    <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center hover:scale-105 transition">
-      <i class='bx bxs-color text-5xl text-purple-600 mb-4'></i>
-      <h3 class="text-xl font-semibold mb-2">Artes Visuais</h3>
-      <p class="text-gray-600 mb-4">VEJA MEU TRABALHO COMO DESIGNER .</p>
-      <a href="https://www.instagram.com/eliezer_creator?igsh=NXhwbXVnczB1c2Fv" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Ver no Instagram</a>
-    </div>
-
-  </div>
-</section>
-  
-<form action="https://formsubmit.co/reliezer232@gmail.com" method="POST" id="ratingForm" class="flex flex-col items-center space-y-4 p-4">
-  <div class="flex space-x-2" id="stars">
-    <button type="button" data-value="1" class="text-3xl text-gray-400 hover:text-yellow-400 transition">&#9733;</button>
-    <button type="button" data-value="2" class="text-3xl text-gray-400 hover:text-yellow-400 transition">&#9733;</button>
-    <button type="button" data-value="3" class="text-3xl text-gray-400 hover:text-yellow-400 transition">&#9733;</button>
-    <button type="button" data-value="4" class="text-3xl text-gray-400 hover:text-yellow-400 transition">&#9733;</button>
-    <button type="button" data-value="5" class="text-3xl text-gray-400 hover:text-yellow-400 transition">&#9733;</button>
-  </div>
-
-  <!-- Campo oculto para enviar a nota -->
-  <input type="hidden" name="rating" id="ratingValue">
-
-  <!-- Assunto personalizado -->
-  <input type="hidden" name="_subject" value="Nova avaliação recebida no site!">
-
-  <!-- Redirecionar para página de obrigado (opcional, coloque sua URL aqui se quiser) -->
-  <!-- <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> -->
-
-  <button type="submit" class="bg-yellow-400 text-white px-4 py-2 rounded hover:bg-yellow-500 transition">
-    Enviar Avaliação
-  </button>
-</form>
-
-            <!-- -------------- CONTACT BOX ---------------- -->
-
-
-
-
-
-
-  <div class="container">
-
-    <div class="contact-info">
-
-      <h2>CONTATE-ME <i class="uil uil-corner-right-down"></i></h2>
-
-      <p><a href="https://www.instagram.com/eliezer_creator?igsh=MWNzNTczZTFxNG12bQ==" class="uil uil-instagram"> Insta: eliezer_dg_pw     </a></p>
-
-       
-
-               <p><a href="https://www.facebook.com/share/1EtVdzfkKb/" class="uil uil-facebook" > Face: Eliezer Rodrigues</a>
-
-         <p><a href="https://wa.link/joxkvn" class="uil uil-whatsapp"> Wats: (38) 9 9992-9109</a></p>
-
-           
-
-      <p>
-
-  <a href="tel:+553899929109" class="uil uil-phone"> Tel: (38) 9 9992-9109</a>
-
-      </p> 
-              </div>
-
-  </div>
-
-
-<style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #f0f2f5;
-    }
-
-    .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .contact-info {
-      background-color: #ffffff;
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-      width: 100%;
-    }
-
-    .contact-info h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .contact-info p {
-      font-size: 16px;
-      color: #555;
-      margin: 10px 0;
-    }
-
-    .contact-info i {
-      margin-right: 8px;
-      color: #007BFF;
-    }
-
-    @media (max-width: 480px) {
-      .contact-info {
-        padding: 25px 20px;
-      }
-
-      .contact-info h2 {
-        font-size: 20px;
-      }
-
-      .contact-info p {
-        font-size: 15px;
-      }
-    }
-  </style>
-      
-
-</body>
-
-</html>
-
-           
-
-              
-
-     </section>
-
-
-
-  </main>
-
-
-
-        <!--===== FOOTER =====-->
-
-        <footer class="footer">
-
-            
-
-            <p class="footer__copy">&#169; 2025 Eliezer desenvolvedor front-end.Todos os direitos reservados</p>
-
-        </footer>
-
-<!-- Fullscreen overlay -->
-<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-[9999] hidden">
-    <!-- Botão X -->
-  <button id="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold z-50">&times;</button>
-
-  <!-- Imagem centralizada -->
-  <div class="flex items-center justify-center h-full">
-    <img id="modalImage" src="" class="max-w-[90%] max-h-[90%] rounded shadow-lg transition duration-300">
-  </div>
-</div>
-
-
-
-        <!--===== SCROLL REVEAL =====-->
-
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-<script>
-const stars = document.querySelectorAll('#stars button');
-const ratingValue = document.getElementById('ratingValue');
-
-stars.forEach(star => {
-  star.addEventListener('click', () => {
-    const selectedValue = star.getAttribute('data-value');
-    ratingValue.value = selectedValue;
-
-    stars.forEach(s => {
-      if (s.getAttribute('data-value') <= selectedValue) {
-        s.classList.add('text-yellow-400');
-        s.classList.remove('text-gray-400');
-      } else {
-        s.classList.remove('text-yellow-400');
-        s.classList.add('text-gray-400');
-      }
-    });
-  });
-});
- </script>
-<!--===== MAIN JS =====-->
-
-        <script src="assets/js/main.js"></script>
-<script>
-const images = document.querySelectorAll(".columns-4 img");
-const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
-
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    modalImage.src = img.src;
-    modal.classList.remove("hidden");
-  });
-});
-
-modal.addEventListener("click", () => {
-  modal.classList.add("hidden");
-});
-</script>
-
-<script>
-  window.addEventListener('load', () => {
-    // Espera 10 segundos depois do carregamento completo
-    setTimeout(() => {
-      document.getElementById('loader').style.display = 'none';
-    }, 1000); // 10000 milissegundos = 10 segundos
-  });
-</script>
-    </body>
-
-      </html>
-
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
     
+    <!-- Ícone -->
+    <link rel="icon" type="image/jpeg" href="icone (1).jpg">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <img src="iconelogo.png" alt="" class="nav__logo">
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">INICIO</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">SOBRE MIM</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">ESPECIALIDADES</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">ALGUNS PROJETOS</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">CONTATO</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Olá, <span class="home__title-color">Eu sou</span><br><span class="typedText"></span></h1>
+                <a href="https://wa.me/5538999929109?text=Ola%20Eliezer%20vim%20atrav%C3%A9s%20do%20seu%20site%20profissional%20quero%20oferecer%20uma%20proposta%20de%20emprego" class="button">Contratar</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/eliezer-rodrigues-5b0812346" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/eliezer_creator" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.link/joxkvn" class="home__social-icon"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19 145.96C34.02 76.58 114.86 54.73 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19 145.96C34.02 76.58 114.86 54.73 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+                        <image class="home__blob-img" x="50" y="60" href="assets/img/home.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">Me chamo Eliezer</h2>
+                    <p class="about__text">
+                        Tenho 18 anos e sou apaixonado por tecnologia e design. Concluí o Ensino Médio em 2024 e atualmente estou cursando o 3º módulo do curso técnico em Informática. 
+                        Paralelamente, venho me dedicando aos estudos em design gráfico, programação web e web design, unindo criatividade e lógica para desenvolver soluções digitais modernas, funcionais e visualmente atrativas.
+                        Estou sempre em busca de novos aprendizados e oportunidades que me permitam evoluir profissionalmente e aplicar meus conhecimentos em projetos reais.
+                        Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e JavaScript, além de experiência com frameworks como Tailwind CSS e Bootstrap.
+                        Tenho familiaridade com ferramentas de design como PicsArt e Canvas, e venho explorando o uso de Inteligência Artificial em projetos criativos e funcionais.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Especialidades</h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <!-- HTML -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxl-html5 skills__icon'></i><span class="skills__name">HTML5</span></div>
+                        <div class="skills__bar skills__html"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                    <!-- CSS -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxl-css3 skills__icon'></i><span class="skills__name">CSS3</span></div>
+                        <div class="skills__bar skills__css"></div>
+                        <div><span class="skills__percentage">85%</span></div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxl-javascript skills__icon'></i><span class="skills__name">JavaScript</span></div>
+                        <div class="skills__bar skills__js"></div>
+                        <div><span class="skills__percentage">75%</span></div>
+                    </div>
+                    <!-- Bootstrap -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bx-code-block skills__icon'></i><span class="skills__name">Framework Bootstrap</span></div>
+                        <div class="skills__bar"></div>
+                        <div><span class="skills__percentage">75%</span></div>
+                    </div>
+                    <!-- Tailwind -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bx-code-block skills__icon'></i><span class="skills__name">Framework Tailwind</span></div>
+                        <div class="skills__bar skills__ux"></div>
+                        <div><span class="skills__percentage">85%</span>
+                            </div>
+                    </div>
+                    <!-- PicsArt -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxs-paint skills__icon'></i><span class="skills__name">PicsArt</span></div>
+                        <div class="skills__bar"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                    <!-- Canvas -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxs-brush skills__icon'></i><span class="skills__name">Canvas</span></div>
+                        <div class="skills__bar"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                    <!-- IA -->
+                    <div class="skills__data">
+                        <div class="skills__names"><i class='bx bxs-brain skills__icon'></i><span class="skills__name">IA</span></div>
+                        <div class="skills__bar"></div>
+                        <div><span class="skills__percentage">95%</span></div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!--===== PROJETOS =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Meus Trabalhos</h2>
+            <div class="bd-grid">
+                <!-- Projetos Web -->
+                <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center hover:scale-105 transition">
+                    <i class='bx bx-code-alt text-5xl text-blue-600 mb-4'></i>
+                    <h3 class="text-xl font-semibold mb-2">Projetos Web</h3>
+                    <p class="text-gray-600 mb-4">VEJA MEUS PROJETOS DEV.</p>
+                    <a href="https://projetos-front-end-nu.vercel.app/" target="_blank" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver Projetos</a>
+                </div>
+
+                <!-- Artes Visuais -->
+                <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center hover:scale-105 transition">
+                    <i class='bx bxs-color text-5xl text-purple-600 mb-4'></i>
+                    <h3 class="text-xl font-semibold mb-2">Artes Visuais</h3>
+                    <p class="text-gray-600 mb-4">VEJA MEU TRABALHO COMO DESIGNER.</p>
+                    <a href="https://www.instagram.com/eliezer_creator?igsh=NXhwbXVnczB1c2Fv" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Ver no Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTATO =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contate-me</h2>
+            <div class="contact-info">
+                <p><a href="https://www.instagram.com/eliezer_creator" class="uil uil-instagram">Insta: eliezer_dg_pw</a></p>
+                <p><a href="https://www.facebook.com/share/1EtVdzfkKb/" class="uil uil-facebook">Face: Eliezer Rodrigues</a></p>
+                <p><a href="https://wa.link/joxkvn" class="uil uil-whatsapp">Whats: (38) 9 9992-9109</a></p>
+                <p>Tel: (38) 9 9992-9109</p>
+            </div>
+        </section>
+    </main>
+
+    <!--===== RODAPÉ =====-->
+    <footer class="footer">
+        <p class="footer__copy">&#169; 2025 Eliezer desenvolvedor front-end. Todos os direitos reservados.</p>
+    </footer>
+
+    <!--===== SCRIPTS =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
