@@ -439,8 +439,8 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
     <!-- Galeria de Artes -->
     <div class="bg-white rounded-lg shadow-lg p-6 max-w-xs w-full text-center hover:scale-105 transition">
       <i class='bx bxs-color text-5xl text-purple-600 mb-4'></i>
-      <h3 class="text-xl font-semibold mb-2">Artes Visuais</h3>
-      <p class="text-gray-600 mb-4">VEJA MEU TRABALHO COMO DESIGNER .</p>
+      <h3 class="text-xl font-semibold mb-2">Projetos design</h3>
+      <p class="text-gray-600 mb-4">VEJA MINHA GALERIA DE ARTES.</p>
       <a href="https://www.instagram.com/eliezer_creator?igsh=NXhwbXVnczB1c2Fv" target="_blank" class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Ver no Instagram</a>
     </div>
 
@@ -483,7 +483,7 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
 
       <h2>CONTATE-ME <i class="uil uil-corner-right-down"></i></h2>
 
-      <p><a href="https://www.instagram.com/eliezer_creator?igsh=MWNzNTczZTFxNG12bQ==" class="uil uil-instagram"> Insta: eliezer_dg_pw     </a></p>
+      <p><a href="https://www.instagram.com/eliezer_creator?igsh=MWNzNTczZTFxNG12bQ==" class="uil uil-instagram"> Insta: eliezer_creator     </a></p>
 
        
 
@@ -592,16 +592,6 @@ Possuo conhecimentos sólidos em desenvolvimento web utilizando HTML5, CSS3 e Ja
 
         </footer>
 
-<!-- Fullscreen overlay -->
-<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-[9999] hidden">
-    <!-- Botão X -->
-  <button id="closeModal" class="absolute top-4 right-4 text-white text-4xl font-bold z-50">&times;</button>
-
-  <!-- Imagem centralizada -->
-  <div class="flex items-center justify-center h-full">
-    <img id="modalImage" src="" class="max-w-[90%] max-h-[90%] rounded shadow-lg transition duration-300">
-  </div>
-</div>
 
 
 
@@ -633,22 +623,6 @@ stars.forEach(star => {
 <!--===== MAIN JS =====-->
 
         <script src="assets/js/main.js"></script>
-<script>
-const images = document.querySelectorAll(".columns-4 img");
-const modal = document.getElementById("imageModal");
-const modalImage = document.getElementById("modalImage");
-
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    modalImage.src = img.src;
-    modal.classList.remove("hidden");
-  });
-});
-
-modal.addEventListener("click", () => {
-  modal.classList.add("hidden");
-});
-</script>
 
 <script>
   window.addEventListener('load', () => {
